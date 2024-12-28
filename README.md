@@ -15,8 +15,9 @@ NBT是Minecraft游戏中使用的一种数据存储格式，能够以二进制�
 ## 安装
 
 ```bash
-pip install minecraft-nbt-library
+pip install python_nbt
 ```
+暂时还不能安装
 
 ## 使用示例
 
@@ -38,7 +39,7 @@ nbt.write_to_nbt_file("path/to/your/output/nbt/file.nbt", nbt_data)
 ## 文档
 
 
-• [API文档](#)：详细的API文档，包括每个类和方法的说明。
+• [API文档](https://github.com/long-or/MCNBT-py/edit/main/api/main.md)：详细的API文档，包括每个类和方法的说明。
 
 • [贡献指南](#)：如何为这个项目贡献代码。
 
