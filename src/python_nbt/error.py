@@ -3,6 +3,8 @@
 """
 
 
+class BreakLoop(Exception): pass
+
 class SnbtParseError(Exception): pass
 class SnbtTokenError(Exception): pass
 
@@ -22,5 +24,5 @@ def throw_nbt_error(e, buffer, length):
 
 def buffer_read(buffer, length, msg):
     byte = buffer.read(length)
-    if len(byte) != length: raise NbtParseError("数据可能被截断了 数据长度应该为 %s 实际为 %s 数据类型为 %s" % (length, len(byte), msg))
+    if len(byte) != length: raise NbtParseError("ELO Error，期望%s字节，实际为%s字节（%s）" % (length, len(byte), msg))
     return byte
